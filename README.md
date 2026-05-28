@@ -1,35 +1,24 @@
-# servecreative.github.io
+# SERVEcreative.github.io
 
-Root GitHub Pages site for **SERVEcreative**. Serves AdMob `app-ads.txt` at:
+Root GitHub Pages site for **SERVEcreative** apps.
 
-`https://servecreative.github.io/app-ads.txt`
+## URL pattern
 
-(Project repos such as [Dhyan](https://github.com/SERVEcreative/Dhyan) stay under `/Dhyan/` — that path cannot satisfy AdMob root-domain verification.)
+| App | Privacy policy | AdMob app-ads.txt |
+|-----|----------------|-------------------|
+| Dhyan | https://servecreative.github.io/dhyan/privacy_policy/ | https://servecreative.github.io/dhyan/app-ads.txt |
+| NEURA | https://servecreative.github.io/neura/privacy_policy/ | — (no ads) |
+| Bhakti Sadhna | https://servecreative.github.io/bhakti-sadhna/privacy_policy/ | https://servecreative.github.io/bhakti-sadhna/app-ads.txt |
 
-## One-time GitHub setup
+Root AdMob file (Play Console default): https://servecreative.github.io/app-ads.txt
 
-1. Create a **public** repo named exactly `SERVEcreative.github.io` under the SERVEcreative org (or your user account).
-2. Push this folder to `main`:
+## Play Console setup
 
-   ```bash
-   cd servecreative.github.io
-   git init
-   git add app-ads.txt index.html README.md
-   git commit -m "Add root app-ads.txt for AdMob verification"
-   git branch -M main
-   git remote add origin https://github.com/SERVEcreative/SERVEcreative.github.io.git
-   git push -u origin main
-   ```
+- **Privacy policy URL:** `https://servecreative.github.io/<appname>/privacy_policy/`
+- **Developer website (AdMob):** use `https://servecreative.github.io/<appname>` if verifying per-app, or `https://servecreative.github.io` for the root `app-ads.txt`
 
-3. Enable Pages: **Settings → Pages → Build and deployment → Deploy from branch → `main` → `/ (root)`**.
-4. After 1–2 minutes, open `https://servecreative.github.io/app-ads.txt` and confirm the publisher line is visible.
+## Add a new app
 
-## Play Console & AdMob
-
-- Set **Developer website** (Play Console → Store presence) to: `https://servecreative.github.io`
-- In AdMob, use the same domain; crawlers expect `app-ads.txt` at the site root, not under `/Dhyan/`.
-- Re-check verification in AdMob after the URL returns `200` with the correct `pub-6827778613476055` line.
-
-## Updating app-ads.txt
-
-Edit `app-ads.txt`, commit, and push to `main`. No app release required.
+1. Create `<appname>/privacy_policy/index.html`
+2. If the app uses AdMob, add `<appname>/app-ads.txt`
+3. Link it from `index.html`

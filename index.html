@@ -4,24 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SERVEcreative</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      line-height: 1.6;
-      max-width: 640px;
-      margin: 2rem auto;
-      padding: 0 20px;
-    }
-    a { color: #1565c0; }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <h1>SERVEcreative</h1>
-  <p>Developer site for AdMob <code>app-ads.txt</code> and app listings.</p>
-  <ul>
-    <li><a href="/app-ads.txt">app-ads.txt</a> (AdMob / ads.txt verification)</li>
-    <li><a href="/Dhyan/">Dhyan — privacy policy</a></li>
-  </ul>
+  <p class="meta">Privacy policies and AdMob verification for Serve Creative apps.</p>
+
+  <div class="app-grid">
+    <a class="app-card" href="dhyan/privacy_policy/">
+      <strong>Dhyan</strong>
+      <span>Privacy policy · app-ads.txt for AdMob</span>
+    </a>
+    <a class="app-card" href="neura/privacy_policy/">
+      <strong>NEURA</strong>
+      <span>Privacy policy</span>
+    </a>
+    <a class="app-card" href="bhakti-sadhna/privacy_policy/">
+      <strong>भक्ति साधना (Bhakti Sadhna)</strong>
+      <span>Privacy policy · app-ads.txt for AdMob</span>
+    </a>
+  </div>
+
+  <footer>
+    <p>Root AdMob file: <a href="/app-ads.txt">/app-ads.txt</a></p>
+    <p>
+      Contact:
+      <a href="mailto:professional.rahul.business@gmail.com">professional.rahul.business@gmail.com</a>
+    </p>
+  </footer>
 </body>
 </html>
