@@ -8,7 +8,7 @@ Root GitHub Pages site for **SERVEcreative** apps.
 |-----|----------------|-------------------|
 | Dhyan | https://servecreative.github.io/dhyan/privacy_policy/ | https://servecreative.github.io/dhyan/app-ads.txt |
 | NEURA | https://servecreative.github.io/neura/privacy_policy/ | — (no ads) |
-| Bhakti Sadhna | https://servecreative.github.io/bhakti-sadhna/privacy_policy/ | https://servecreative.github.io/bhakti-sadhna/app-ads.txt |
+| Bhakti Sadhana | https://servecreative.github.io/bhakti-sadhana/privacy_policy/ | https://servecreative.github.io/bhakti-sadhana/app-ads.txt |
 
 Root AdMob file (Play Console default): https://servecreative.github.io/app-ads.txt
 
